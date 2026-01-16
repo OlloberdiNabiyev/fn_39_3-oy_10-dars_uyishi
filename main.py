@@ -80,3 +80,51 @@ from collections import namedtuple
 #     mov = Movie(*movie)
 #     if mov.year > 2015 and mov.rating >= 8:
 #         print(movie)
+
+# 6
+# numbers = [15, 42, 8, 23, 56, 4, 91, 37, 12, 68]
+# total = 0
+# for number in numbers:
+#     total += number
+# print(total / len(numbers))
+
+# 7
+# colors = ("red", "green", "blue", "yellow")
+# print(colors.index('blue'))
+# colors += ('black',) # qoshildi xatosiz lekin ',' qoymaganimda qoshilmasdi chunki uni tuple emas str deb oylab qolardi.
+# print(colors)
+
+# 8
+# matn = 'Tashkent va Fergana nomer 1'
+# raqam = 0
+# joy = 0
+# harf = 0
+# for i in matn:
+#     if i.isdigit():
+#         raqam += 1
+#     elif i.isalpha():
+#         harf += 1
+#     else:
+#         joy += 1
+# print(f'matnda {raqam}ta raqam, {joy} ta bosh joy, {harf}ta harf bor')
+
+# 9
+# to = range(1,100)
+# fa = list(filter(lambda value: value % 5 == 0 and value % 3 != 0,to))
+# print(fa)
+
+# 10
+# Sequence = namedtuple('Sequence',['title','author','pages'])
+# books = [
+#     ('dunyoning ishlari','O\'tkir Hoshimov',300),
+#     ('sos','nomalum',400),
+# ]
+# max_page = books[0][2]
+# total_pages = 0
+# for book in books:
+#     b = Sequence(*book)
+#     if b.pages > max_page:
+#         max_page = b.pages
+#     total_pages += b.pages
+# print(max_page)
+# print(total_pages)
