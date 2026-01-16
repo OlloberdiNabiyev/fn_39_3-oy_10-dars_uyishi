@@ -128,3 +128,96 @@ from collections import namedtuple
 #     total_pages += b.pages
 # print(max_page)
 # print(total_pages)
+
+# 11
+# class Juft:
+#     def __init__(self,start,end):
+#         self.start = start
+#         self.end = end
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         if self.start < self.end:
+#             if self.start % 2 != 0:
+#                 self.start += 1
+#             elif self.start % 2 == 0:
+#                 self.start += 2
+#         else:
+#             raise StopIteration
+#         return self.start
+# to20 = Juft(1,20)
+# for i in to20:
+#     print(i)
+
+# 12 
+# shunisga suniy intellekt yordamlashdi ozmdiki oxshamagandi
+# class Teskari:
+#     def __init__(self, value: list):
+#         self.value = value
+#         self.index = len(value)
+    
+#     def __iter__(self):
+#         return self
+    
+#     def __next__(self):
+#         if self.index <= 0: 
+#             raise StopIteration
+#         self.index -= 1
+#         return self.value[self.index]
+
+# nums = Teskari([10, 20, 30])
+# for i in nums:
+#     print(i)
+
+# 13
+# class Ret:
+#     def __init__(self,value):
+#         self.value = value
+#         self.index = 0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.index < len(self.value):
+#             value = self.value[self.index]
+#             self.index += 1
+#             if value >= 5:
+#                 return value
+#         raise StopIteration
+# royxat = Ret([4,5,6,7,1,3,2])
+# for i in royxat:
+#     print(i)
+
+# 14
+# class Two:
+#     def __init__(self,value:list):
+#         self.value = value
+#         self.index = 1
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         if self.index >= len(self.value):
+#             raise StopIteration
+#         val = self.value[self.index]
+#         self.index += 2
+#         return val
+# num = Two([10, 20, 30, 40, 50])
+# for i in num:
+#     print(i)
+
+# 15
+# class Musbat:
+#     def __init__(self,value):
+#         self.value = value
+#         self.count = 0
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         while self.count < len(self.value):
+#             val = self.value[self.count]
+#             self.count += 1
+#             if val > 0:
+#                 return val
+#         raise StopIteration
+# royxat = Musbat([1,-39,-2,3,88,-29,97])
+# for i in royxat:
+#     print(i)
